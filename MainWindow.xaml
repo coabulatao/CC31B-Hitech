@@ -7,6 +7,57 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="160"/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        
+        
+        
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+                      
+            <Label Grid.Row="0" Grid.Column="0" Content="Player Image" Background="DeepSkyBlue"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Player Status" Background="LavenderBlush"/>
+        </Grid>
+        
+        
+
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Location Information" Background="DeepSkyBlue"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Enemy Information" Background="LavenderBlush"/>
+        </Grid>
+
+        
+        
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Menu" Background="AliceBlue"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game Message" Background="LightPink"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Inventory and Quest" Background="LightYellow"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="Item Information and Action" Background="LightYellow"/> 
+        <Label Grid.Row="3" Grid.Column="2" Content="Navigation Buttons" Background="LightYellow"/>
+        
+        
+        
     </Grid>
 </Window>
