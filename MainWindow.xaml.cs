@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Engine.View_Models;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,8 +17,11 @@ namespace CC31B_Hitech;
 /// </summary>
 public partial class MainWindow : Window
 {
+    public Game_session game_Session;
     public MainWindow()
     {
         InitializeComponent();
+        game_Session = new Game_session();
+        DataContext = game_Session;
     }
 }
